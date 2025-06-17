@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raghunandan Portfolio</title>
+    <meta name="description" content="Raghunandan's personal portfolio website." />
+
+    <!-- Open Graph / Twitter Meta Tags -->
+    <meta property="og:title" content="Raghunandan Portfolio" />
+    <meta property="og:description" content="Raghunandan's personal portfolio website." />
+    <meta property="og:image" content="assets/profile-image.svg" />
+    <meta property="og:url" content="#" />
+
+    <!-- Icons and Styles -->
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+
+    <style>
+      .navbar-logo {
+        height: 40px;
+        width: auto;
+      }
+
+      .navbar .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .nav-menu {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="hero">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="container">
+          <!-- ✅ Logo on the left -->
+          <div class="logo-container" style="display: flex; align-items: center; gap: 10px;">
+            <img src="assets/rlogo.avif" alt="R Logo" class="navbar-logo" />
+            <h1 id="logo"></h1>
+          </div>
+
+          <!-- ✅ Right-side items (unchanged) -->
+          <ul class="nav-menu">
+            <li>
+              <a class="nav-link btn btn-primary" href="https://drive.google.com/file/d/1C9TB-YGWkn3QWqcjmYacmpfdtWYDPV_6/view?usp=drive_link" target="_blank">
+                RESUME <i class="fas fa-arrow-right"></i>
+              </a>
+            </li>
+
+            <!-- Toggle switch -->
+            <div class="theme-switch">
+              <input type="checkbox" id="switch" />
+              <label class="toggle-icons" for="switch">
+                <img class="moon" src="assets/moon.svg" />
+                <img class="sun" src="assets/sun.svg" />
+              </label>
+            </div>
+          </ul>
+
+          <!-- Hamburger menu -->
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="header-container">
+        <img class="profile-image" src="assets/profile-image.JPG" alt="Profile" />
+        <h1>Hi I'm Raghunandan</h1>
+
+        <div class="content-text">
+          <h2>Building </h2>
+          <h2> and learning.</h2>
+          <p>
+            An aspiring Web Developer passionate about learning to build impactful digital solutions.
+          </p>
+        </div>
+
+        <a href="https://github.com/raghunandan12-ui" class="btn btn-secondary" target="_blank">Connect With Me</a>
+      </section>
+    </header>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <a href="mailto:raghunandanjaryal@gmail.com">raghunandanjaryal@gmail.com</a>
+
+        <!-- Social Links -->
+        <div class="social">
+          <a href="https://github.com/raghunandan12-ui" target="_blank">
+            <img src="./assets/github-icon.svg" alt="GitHub" />
+          </a>
+          <a href="https://www.linkedin.com/in/raghunandan-jaryal" target="_blank">
+            <img src="./assets/linkedin-icon.svg" alt="LinkedIn" />
+          </a>
+          <a href="https://twitter.com/em_raghu45" target="_blank">
+            <img src="./assets/twitter-icon.svg" alt="X" />
+          </a>
+        </div>
+
+        <p>Made with ❤️ by Raghu</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
